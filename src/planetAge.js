@@ -18,5 +18,6 @@ PlanetAge.prototype.calculateMarsAge = function() {
 };
 
 PlanetAge.prototype.calculateJupiterAge = function() {
-  
+  let jupiterAge = (this.age * 11.86);
+  return Math.round(jupiterAge*10)/10;
 }
