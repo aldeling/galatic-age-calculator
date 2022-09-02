@@ -1,6 +1,6 @@
 export default function PlanetAge(age) {
   this.age = age;
-};
+}
 
 PlanetAge.prototype.calculateMercuryAge = function() {
   let mercuryAge = (this.age * .24);
@@ -24,6 +24,9 @@ PlanetAge.prototype.calculateJupiterAge = function() {
 
 PlanetAge.prototype.calculateMercuryRemaining = function() {
   let mercuryRemainingAge = ((79 - this.age) * .24);
+  if (mercuryRemainingAge < 0) {
+    return Math.round((mercuryRemainingAge*(-1))*100)/100;
+  }
   return Math.round(mercuryRemainingAge*100)/100;
 };
 
