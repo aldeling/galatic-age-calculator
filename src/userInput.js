@@ -3,5 +3,6 @@ export default function UserInput(age) {
 }
 
 UserInput.prototype.planetAge = function() {
-
-}
+  let mercuryAge = (this.age * .24);
+  return mercuryAge;
+};
