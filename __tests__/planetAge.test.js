@@ -6,9 +6,14 @@ describe('PlanetAge', () => {
     expect(planetAge.age).toEqual(5);
   })
 
-  test('should correctly calculate mercury age', () =>{
+  test('should correctly calculate mercury age', () => {
     const mercuryAge = new PlanetAge(5);
     expect(mercuryAge.calculatePlanetAge()).toEqual(1.2);
 
+  })
+
+  test('should correctly calculate venus age', () => {
+    const venusAge = new PlanetAge(5);
+    expect(venusAge.calculatePlanetAge()).toEqual(3.1);
   })
 });
