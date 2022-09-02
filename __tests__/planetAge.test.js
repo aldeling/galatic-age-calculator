@@ -31,4 +31,9 @@ describe('PlanetAge', () => {
     const mercuryAge = new PlanetAge(1);
     expect(mercuryAge.calculateMercuryAge()).toEqual(.24);
   })
+
+  test('should correctly calculate number of years remaining on mercury', () => {
+    const mercuryRemainingAge = new PlanetAge(5);
+    expect(mercuryRemainingAge.calculateMercuryRemaining()).toEqual(17.76);
+  })
 });

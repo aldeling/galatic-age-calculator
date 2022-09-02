@@ -21,3 +21,7 @@ PlanetAge.prototype.calculateJupiterAge = function() {
   let jupiterAge = (this.age * 11.86);
   return Math.round(jupiterAge*100)/100;
 }
+
+PlanetAge.prototype.calculateMercuryRemaining = function() {
+
+}
