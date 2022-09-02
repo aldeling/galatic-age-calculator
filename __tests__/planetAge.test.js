@@ -46,4 +46,9 @@ describe('PlanetAge', () => {
     const marsRemainingAge = new PlanetAge(5);
     expect(marsRemainingAge.calculateMarsRemaining()).toEqual(139.12);
   })
+
+  test('should correctly calculate number of years remaining on jupiter', () => {
+    const jupiterRemainingAge = new PlanetAge(5);
+    expect(jupiterRemainingAge.calculateJupiterRemaining()).toEqual(877.64);
+  })
 });
