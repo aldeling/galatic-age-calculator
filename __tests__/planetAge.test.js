@@ -14,6 +14,6 @@ describe('PlanetAge', () => {
 
   test('should correctly calculate venus age', () => {
     const venusAge = new PlanetAge(5);
-    expect(venusAge.calculatePlanetAge()).toEqual(3.1);
+    expect(venusAge.calculateVenusAge()).toEqual(3.1);
   })
 });
