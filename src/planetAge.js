@@ -9,15 +9,15 @@ PlanetAge.prototype.calculateMercuryAge = function() {
 
 PlanetAge.prototype.calculateVenusAge = function() {
   let venusAge = (this.age * .62);
-  return Math.round(venusAge*10)/10;
+  return Math.round(venusAge*100)/100;
 };
 
 PlanetAge.prototype.calculateMarsAge = function() {
   let marsAge = (this.age * 1.88);
-  return Math.round(marsAge*10)/10;
+  return Math.round(marsAge*100)/100;
 };
 
 PlanetAge.prototype.calculateJupiterAge = function() {
   let jupiterAge = (this.age * 11.86);
-  return Math.round(jupiterAge*10)/10;
+  return Math.round(jupiterAge*100)/100;
 }
