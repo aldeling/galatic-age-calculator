@@ -8,5 +8,6 @@ PlanetAge.prototype.calculatePlanetAge = function() {
 };
 
 PlanetAge.prototype.calculateVenusAge = function() {
-  
+  let venusAge = (this.age * .62);
+  return venusAge;
 }
