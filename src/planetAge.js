@@ -4,7 +4,7 @@ export default function PlanetAge(age) {
 
 PlanetAge.prototype.calculateMercuryAge = function() {
   let mercuryAge = (this.age * .24);
-  return Math.round(mercuryAge*10)/10;
+  return Math.round(mercuryAge*100)/100;
 };
 
 PlanetAge.prototype.calculateVenusAge = function() {
