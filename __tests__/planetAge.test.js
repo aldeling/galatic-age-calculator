@@ -41,4 +41,9 @@ describe('PlanetAge', () => {
     const venusRemainingAge = new PlanetAge(5);
     expect(venusRemainingAge.calculateVenusRemaining()).toEqual(45.88);
   })
+
+  test('should correctly calculate number of years remaining on mars', () => {
+    const marsRemainingAge = new PlanetAge(5);
+    expect(marsRemainingAge.calculateMarsRemaining()).toEqual(139.12);
+  })
 });
