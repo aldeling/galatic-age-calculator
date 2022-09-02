@@ -52,13 +52,18 @@ describe('PlanetAge', () => {
     expect(jupiterRemainingAge.calculateJupiterRemaining()).toEqual(877.64);
   })
 
-  test('should return a positive number if age is greater then expectance', () => {
+  test('should return a positive number if age is greater then mercury expectance', () => {
     const mercuryRemainingAge = new PlanetAge(80);
     expect(mercuryRemainingAge.calculateMercuryRemaining()).toEqual(.24)
   })
 
-  test('should return a positive number if age is greater then expectance', () => {
+  test('should return a positive number if age is greater then venus expectance', () => {
     const venusRemainingAge = new PlanetAge(80);
     expect(venusRemainingAge.calculateVenusRemaining()).toEqual(.62)
+  })
+
+  test('should return a positive number if age is greater then mars expectance', () => {
+    const marsRemainingAge = new PlanetAge(80);
+    expect(marsRemainingAge.calculateMarsRemaining()).toEqual(1.88)
   })
 });
