@@ -40,6 +40,9 @@ PlanetAge.prototype.calculateVenusRemaining = function() {
 
 PlanetAge.prototype.calculateMarsRemaining = function() {
   let marsRemainingAge = ((79 - this.age) * 1.88);
+  if (marsRemainingAge < 0) {
+    return Math.round((marsRemainingAge*(-1))*100)/100;
+  }
   return Math.round(marsRemainingAge*100)/100;
 };
 
