@@ -38,5 +38,6 @@ PlanetAge.prototype.calculateMarsRemaining = function() {
 };
 
 PlanetAge.prototype.calculateJupiterRemaining = function() {
-
+  let jupiterRemainingAge = ((79 - this.age) * 11.86);
+  return Math.round(jupiterRemainingAge*100)/100;
 };
