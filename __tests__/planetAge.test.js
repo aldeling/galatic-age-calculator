@@ -52,4 +52,8 @@ describe('PlanetAge', () => {
     expect(jupiterRemainingAge.calculateJupiterRemaining()).toEqual(877.64);
   })
 
+  test('should return a positive number is age is greater then expectance', () => {
+    const mercuryRemainingAge = new PlanetAge(80);
+    expect(mercuryRemainingAge.calculateMercuryRemaining()).toEqual(.24)
+  })
 });
