@@ -28,5 +28,6 @@ PlanetAge.prototype.calculateMercuryRemaining = function() {
 }
 
 PlanetAge.prototype.calculateVenusRemaining = function() {
-
+  let venusRemainingAge = ((79 - this.age) * .62);
+  return Math.round(venusRemainingAge*100)/100;
 }
