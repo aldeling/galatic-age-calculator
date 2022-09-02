@@ -8,7 +8,7 @@ describe('PlanetAge', () => {
 
   test('should correctly calculate mercury age', () => {
     const mercuryAge = new PlanetAge(5);
-    expect(mercuryAge.calculatePlanetAge()).toEqual(1.2);
+    expect(mercuryAge.calculateMercuryAge()).toEqual(1.2);
 
   })
 
