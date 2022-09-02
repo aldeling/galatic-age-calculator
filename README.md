@@ -7,6 +7,9 @@ This is a web application that allows a user to input there current age. They th
   * HTML
   * JavaScript
   * CSS
+  * Webpack
+  * Jest
+  * eslint
 ### Setup Instructions
 There are two ways the user can choose to set up this web application. First they can open the [GitHub]() pages link and it will take them to a preset application through GitHub. Second the user can from the repository clone the application. Once cloned and on their personal device they can go into the file through the terminal and do npm start and it will open the application in their default browser.
 ### Known Bugs
