@@ -52,8 +52,4 @@ describe('PlanetAge', () => {
     expect(jupiterRemainingAge.calculateJupiterRemaining()).toEqual(877.64);
   })
 
-  test("should return a statement if age is over mercuries age expectance", () => {
-    const mercuryAgeLimit = new PlanetAge(80);
-    expect(mercuryAgeLimit.overMercuryAge()).toEqual("Congrats! you have passed the age expectance!")
-  })
 });
